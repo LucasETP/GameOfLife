@@ -90,7 +90,7 @@ function startSimulation() {
     if (intervalId) return;
     isPaused = false;
     intervalId = setInterval(stepSimulation, intervalSpeed);
-    document.getElementById('play-pause-btn').src = 'funnyface.png';
+    document.getElementById('play-pause-btn').src = 'pause.png';
 }
 
 function pauseSimulation() {
@@ -99,7 +99,7 @@ function pauseSimulation() {
         intervalId = null;
     }
     isPaused = true;
-    document.getElementById('play-pause-btn').src = 'funnyface.png';
+    document.getElementById('play-pause-btn').src = 'play.png';
 }
 
 function resetSimulation() {
